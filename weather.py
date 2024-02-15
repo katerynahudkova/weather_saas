@@ -59,8 +59,8 @@ def handle_invalid_usage(error):
     return response
 
 
-@app.route("/content/api/v1/integration/generate", methods=["POST"])
-def joke_endpoint():
+@app.route("/weather", methods=["POST"])
+def weather_endpoint():
     start_dt = dt.datetime.now()
     json_data = request.get_json()
 
